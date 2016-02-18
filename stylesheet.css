@@ -17,6 +17,8 @@ html {
 
 #four_oh_four_message {
   color: #000000;
+  width: 50%;
+  margin: auto;
 }
 
 @media (max-width: 769px) {
