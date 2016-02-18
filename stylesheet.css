@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   padding: 0px;
+  color: #cccccc;
 }
 
 *, *:before, *:after {
@@ -14,8 +15,8 @@ html {
   margin: auto;
 }
 
-h1 {
-  color: #cccccc;
+#four_oh_four_message {
+  color: #000000;
 }
 
 @media (max-width: 769px) {
