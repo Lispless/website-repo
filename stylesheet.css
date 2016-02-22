@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   padding: 0px;
   color: #cccccc;
+  font-family: Copperplate, sans-serif;
 }
 
 *, *:before, *:after {
@@ -16,9 +17,9 @@ html {
 }
 
 #four_oh_four_message {
-  color: #000000;
   width: 50%;
   margin: auto;
+  padding-top: 4em;
 }
 
 @media (max-width: 769px) {
