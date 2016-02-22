@@ -20,6 +20,26 @@ a {
   padding-bottom: 4em;
 }
 
+#header-name {
+  margin-left: 10px;
+  display: inline;
+}
+
+#header-name:hover {
+  text-decoration: underline;
+}
+
+#name-shine {
+  background: #ffffff;
+  position: absolute;
+  margin-top: 102px;
+  margin-left: -75px;
+  height: 11px;
+  width: 5px;
+  border-radius: 100px 0px;
+  display: inline;
+}
+
 #container {
   max-width: 960px;
   margin: auto;

@@ -1,4 +1,10 @@
 <div id="header-block">
-  <img src="images/sigil.png">
-  <h4><a href="lispless.github.io/website-repo/">Kurt Henry</a></h4>
+  <img src="/images/sigil.png">
+  <div id="name-shine"></div>
+  <h4><a href="lispless.github.io/website-repo/" id="header-name">Kurt Henry</a></h4>
 </div>
+<script>
+  $("#header-name").hover(function() {
+    $("#name-shine").animate({marginLeft: "35px"}, 500)
+  });
+</script>
