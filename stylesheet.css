@@ -34,7 +34,7 @@ a {
   width: 90%;
   padding: 1em 0em;
   margin: 1em 0em;
-  border: 2px solid black;
+  border: 5px solid #cccccc;
 }
 
 .menu-left {
@@ -55,7 +55,6 @@ a {
 
 .menu-text-right {
   float: right;
-  padding-right: 2em;
 }
 
 #four-oh-four-message {
