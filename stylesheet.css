@@ -82,6 +82,19 @@ a {
   float: right;
 }
 
+.blog-post-left {
+  width: 75%;
+  float: left;
+  padding: 2em 2em;
+}
+
+.blog-post-right {
+  width: 75%;
+  float: right;
+  padding: 2em 2em;
+  text-align: right;
+}
+
 #four-oh-four-message {
   width: 50%;
   margin: auto;
