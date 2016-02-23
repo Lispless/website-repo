@@ -31,12 +31,14 @@ a {
 
 #name-shine {
   background: #ffffff;
+  /**background: black;*/
   position: absolute;
   margin-top: 102px;
   margin-left: -75px;
   height: 11px;
   width: 5px;
-  border-radius: 100px 0px;
+  -webkit-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
   display: inline;
 }
 
