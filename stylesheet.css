@@ -95,7 +95,7 @@ a {
   text-align: right;
 }
 
-#four-oh-four-message {
+.four-oh-four-message {
   width: 50%;
   margin: auto;
   padding-top: 4em;
