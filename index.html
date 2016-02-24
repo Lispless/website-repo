@@ -22,9 +22,9 @@
     <div id="header"></div>
 
     <div id="main-menu">
-      <div class="menu-left main-menu-item">
-        <h1 class="menu-text-left"><a href="blog.html">Blog</a></h1>
-      </div>
+      <a href="blog.html"><div class="menu-left main-menu-item">
+        <h1 class="menu-text-left">Blog</h1>
+      </div></a>
       <div class="menu-right main-menu-item">
         <h1 class="menu-text-right">Projects</h1>
       </div>
@@ -36,7 +36,17 @@
     <div id="footer"></div>
   <div>
 <script>
+  $(".menu-text-left").hover(function(){
+    $(this).filter(':not(:animated)').animate({ paddingLeft: "30%" }, 70);
+  }, function() {
+    $(this).animate({ paddingLeft: "35px" }, 70);
+  });
 
+  $(".menu-text-right").hover(function(){
+    $(this).filter(':not(:animated)').animate({ paddingRight: "30%" }, 70);
+  }, function() {
+    $(this).animate({ paddingRight: "35px" }, 70);
+  });
 </script>
 </body>
 </html>
