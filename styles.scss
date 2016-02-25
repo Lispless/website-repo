@@ -55,15 +55,6 @@ a {
   margin: auto;
 }
 
-.main-menu-item > h1 {
-  color: #ccc;
-  -webkit-transition: 1300ms;
-}
-
-.main-menu-item:hover h1 {
-  color: #808080;
-}
-
 .main-menu-item {
   width: 90%;
   margin: 1em 0em;
@@ -90,6 +81,15 @@ a {
     &:before {
       opacity: 1;
     }
+  }
+
+  & > h1 {
+    color: #ccc;
+    -webkit-transition: 1300ms;
+  }
+
+  &:hover > h1 {
+    color: #808080;
   }
 }
 
