@@ -23,13 +23,13 @@
 
     <div id="main-menu">
       <a href="blog.html"><div class="menu-left main-menu-item">
-        <h1 class="menu-text-left">Blog</h1>
+        <h1 class="menu-text-left menu-text">Blog</h1>
       </div></a>
       <div class="menu-right main-menu-item">
-        <h1 class="menu-text-right">Projects</h1>
+        <h1 class="menu-text-right menu-text">Projects</h1>
       </div>
       <div class="menu-left main-menu-item">
-        <h1 class="menu-text-left">Comic</h1>
+        <h1 class="menu-text-left menu-text">Comic</h1>
       </div>
     </div>
 
@@ -47,6 +47,12 @@
   }, function() {
     $(this).animate({ paddingRight: "35px" }, 70);
   });
+
+  $(".menu-text").hover(function(){
+      $(this).animate({letterSpacing: "+=20px"}, 50);
+    }, function(){
+      $(this).animate({letterSpacing: "0"}, 70);
+    });
 </script>
 </body>
 </html>
