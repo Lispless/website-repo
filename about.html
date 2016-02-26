@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="chrome-1">
+  <meta charset="utf-8">
+  <meta name="description" content="About Kurt Henry and how to contact him.">
+  <meta name="author" content="Kurt Henry">
+  <title>Henry, Kurt</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/javascript" href="javascript.js">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="header"></div>
+    <div class="section-centered">
+      <h1>Hello, my name is Kurt Henry</h1>
+      <p>  I develop web pages, sites, and applications for the web.  I pride myself on building responsive design, my acute aesthetic acumen, and ability to learn and digest new languages quickly.</p>
+      <p>I my spare time you might find be coding, drawing, writing, reading, snowboarding, lifting weghts, or getting some chuckles out of people; because, contrary to what my wife says, I'm pretty darn funny.</p>
+      <p>Want to work together?  Make some art, videos, sites, or games?  Or, if you'd like to hire me for a small role, please feel freel to send me a message or ping me on Twitter or LinkedIn.</p>
+      <p>My strengths are HTML, CSS, Bootstrap, and Foundation.  I'm compotent with Javascript, JQuery, Ruby, Ruby on Rails, PHP, SQL, PostreSQL, Active Record, Git, and a plethora of RubyGems.  Things that I'm okay at or starting to learn are Sass, Sinatra, node.js, and JSON.  I also enjoy using other technologies and learning new technologies like rpgmaker vx, GIMP, and any video editing software.  I'm looking forward to learning Blender and Unreal Engine 4.</p>
+      <p>-Best regards</p>
+      <p>Kurt Henry</p>
+    </div>
+    <form id="contact-form" action="http://formspree.io/celfrost@hotmail.com">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="email" name="_replyto" placeholder="Your email">
+      <input type="hidden" name="_next" value="thanks.html">
+      <input type="hidden" name="_subject" value="Contact message from lispless gh-pages site">
+      <input type="text" name="_gotcha" style="display:none">
+      <textarea name="message" placeholder="Your message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+    <div id="footer"></div>
+  <div>
+</body>
+</html>

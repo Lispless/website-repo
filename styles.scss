@@ -16,8 +16,14 @@ a {
   text-decoration: inherit;
 }
 
+p {
+  text-indent: 1em;
+}
+
+
+/*Header*/
 #header-block {
-  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 #sigil {
@@ -43,6 +49,14 @@ a {
   -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
   display: inline;
+}
+
+/*Footer*/
+#footer-block {
+  border: 2px solid #000;
+  height: 100px;
+  width: 100%;
+  margin-top: 2em;
 }
 
 #container {
@@ -115,6 +129,8 @@ a {
   text-align: right
 }
 
+
+/*Blog stuffs*/
 .blog-post-left {
   width: 75%;
   float: left;
@@ -128,6 +144,29 @@ a {
   text-align: right;
 }
 
+
+/*about*/
+.section-centered {
+  text-align: center;
+}
+
+#contact-form {
+  width: 30%;
+  margin: auto;
+
+  & > input {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  & > textarea {
+    width: 100%;
+    height: 6em;
+    margin: 1em 0;
+  }
+}
+
+/*404*/
 .four-oh-four-message {
   width: 70%;
   margin: auto;
@@ -139,10 +178,19 @@ a {
   #container {
     max-width: 768px;
   }
+
+  #contact-form {
+    width: 70%;
+  }
 }
 
 @media (max-width: 480px) {
   #container {
     max-width: 480px;
+    padding: 0 1em;
+  }
+
+  #contact-form {
+    width: 80%;
   }
 }
