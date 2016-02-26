@@ -17,7 +17,7 @@ p {
   text-indent: 1em; }
 
 /*Header*/
-#header-block {
+#header {
   margin-bottom: 2em; }
 
 #sigil {
@@ -42,11 +42,12 @@ p {
   display: inline; }
 
 /*Footer*/
-#footer-block {
-  border: 2px solid #000;
+#footer {
+  /*border: 2px solid #000;*/
   height: 100px;
   width: 100%;
-  margin-top: 2em; }
+  margin-top: 2em;
+  clear: both; }
 
 #container {
   max-width: 960px;
