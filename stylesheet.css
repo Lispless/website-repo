@@ -62,7 +62,7 @@ p {
   width: 90%;
   margin: 1em 0em;
   border: 5px solid #ccc;
-  background-image: linear-gradient(#fff, #fff);
+  background-image: linear-gradient(to right, #fff, #fff);
   /**
   background: -webkit-linear-gradient(left, #cff , #fff);
   background: -o-linear-gradient(right, #cff, #fff);
@@ -72,11 +72,15 @@ p {
   z-index: 100;
   opacity: 1; }
   .main-menu-item:before {
-    background-image: linear-gradient(#000, #cff);
+    background-image: linear-gradient(to top right, #cff, #fff);
+    border-radius: inherit;
     opacity: 0;
     position: absolute;
-    z-index: -100%;
-    transition: opacity 500ms; }
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: -100;
+    transition: opacity 1500ms; }
   .main-menu-item:hover:before {
     opacity: 1; }
   .main-menu-item > h1 {
