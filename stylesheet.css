@@ -10,8 +10,11 @@ html {
   box-sizing: inherit; }
 
 a {
-  color: inherit;
+  color: #808080;
   text-decoration: inherit; }
+
+a:hover {
+  text-decoration: underline; }
 
 p {
   text-indent: 1em; }
@@ -136,6 +139,7 @@ p {
   padding-top: 4em;
   text-align: center; }
 
+/*Media queries*/
 @media (max-width: 769px) {
   #container {
     max-width: 768px; }

@@ -12,8 +12,12 @@ html {
 }
 
 a {
-  color: inherit;
+  color: #808080;
   text-decoration: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -175,6 +179,8 @@ p {
   text-align: center;
 }
 
+
+/*Media queries*/
 @media (max-width: 769px) {
   #container {
     max-width: 768px;
