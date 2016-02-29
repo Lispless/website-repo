@@ -136,17 +136,32 @@ p {
 
 
 /*Blog stuffs*/
+.blog-blurb {
+  border-radius: 10px;
+  -webkit-transition: 2000ms;
+}
+
+.blog-blurb:hover {
+  background-color: #b3b3b3;
+  color: #fff;
+  -webkit-transition: 1000ms;
+}
+
 .blog-post-left {
-  width: 75%;
+  width: 60%;
   float: left;
   padding: 2em 2em;
 }
 
 .blog-post-right {
-  width: 75%;
+  width: 60%;
   float: right;
   padding: 2em 2em;
   text-align: right;
+}
+
+.blog-link {
+  margin-left: 80%
 }
 
 
@@ -199,5 +214,10 @@ p {
 
   #contact-form {
     width: 80%;
+  }
+
+  .blog-link {
+    width: 60%;
+    margin: auto;
   }
 }
