@@ -203,15 +203,30 @@ p {
   width: 30%;
   margin: auto;
 
-  & > input {
-    width: 100%;
-    margin: 1em 0;
-  }
+  & > fieldset {
+    border: none;
 
-  & > textarea {
+    & > label > input {
     width: 100%;
-    height: 6em;
     margin: 1em 0;
+    }
+
+    & > label > textarea {
+      width: 100%;
+      height: 6em;
+      margin: 1em 0;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  height: 3em;
+}
+
+.error {
+  & > input {
+    border: 1px solid red;
   }
 }
 
