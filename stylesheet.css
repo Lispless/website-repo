@@ -1,26 +1,57 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-/*  http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-html {
-  box-sizing: border-box;
-  padding: 0px;
-  color: #ccc;
-  font-family: Copperplate, sans-serif; }
+/* colors:
+grey: #ccc;
+*/
+
+
+/*===================
+GENERAL
+===================*/
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: border-box;
+}
 
 a {
-  color: #808080;
+  color: inherit;
   text-decoration: inherit; }
   a:hover {
     text-decoration: underline; }
 
-p {
-  text-indent: 1em; }
+html {
+  padding: 0px;
+  color: #ccc;
+  font-family: Copperplate, sans-serif; }
 
-/*Header*/
-#header {
-  margin-bottom: 2em; }
+/*===================
+LAYOUT
+===================*/
+
+#container {
+  max-width: 960px;
+  margin: auto;
+}
+
+@media (max-width: 769px) {
+  #container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    max-width: 480px;
+  }
+}
+
+
+/*===================
+HEADER
+===================*/
+
+#header-block {
+  margin-bottom: 4em;
+  position: relative;
+}
 
 #sigil {
   margin: 1em 0 0 18px; }
@@ -32,27 +63,22 @@ p {
     text-decoration: underline; }
 
 #name-shine {
-  background: #ffffff;
+  background: rgba(255,255,255,0.8);
   position: absolute;
-  margin-top: 118px;
-  margin-left: -92px;
-  height: 11px;
-  width: 5px;
+  bottom: 0px;
+  left: -92px;
+  height: 30px;
+  width: 20px;
   -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  display: inline; }
+    -moz-transform: skew(-30deg);
+  display: block;
+}
 
-/*Footer*/
-#footer {
-  /*border: 2px solid #000;*/
-  height: 100px;
-  width: 100%;
-  margin-top: 2em;
-  clear: both; }
 
-#container {
-  max-width: 960px;
-  margin: auto; }
+
+/*===================
+MENU
+===================*/
 
 #main-menu {
   width: 100%;
@@ -139,6 +165,11 @@ p {
     color: #fff;
     -webkit-transition: 1000ms; }
 
+
+/*===================
+MAIN
+===================*/
+
 .blog-post-left {
   float: left; }
 
@@ -178,25 +209,4 @@ p {
   width: 70%;
   margin: auto;
   padding-top: 4em;
-  text-align: center; }
-
-/*Media queries*/
-@media (max-width: 769px) {
-  #container {
-    max-width: 768px; }
-
-  #contact-form {
-    width: 70%; } }
-@media (max-width: 480px) {
-  #container {
-    max-width: 480px;
-    padding: 0 1em; }
-
-  #contact-form {
-    width: 80%; }
-
-  .blog-link {
-    width: 60%;
-    margin: auto; } }
-
-/*# sourceMappingURL=stylesheet.css.map */
+}
