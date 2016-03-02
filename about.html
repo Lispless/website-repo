@@ -29,22 +29,20 @@
     </div>
     <aside id="form">
       <form id="contact-form" action="//formspree.io/your@email.com" method="POST">
-        <fieldset>
-          <label class="form-required">
-            <input type="text" name="name" placeholder="Name" data-validator="string">
-          </label>
+        <label class="form-required">
+          <input type="text" name="name" placeholder="Name" data-validator="string">
+        </label>
 
-          <label class="form-required">
-            <input type="email" name="_replyto" placeholder="Email" data-validator="email">
-          </label>
+        <label class="form-required">
+          <input type="email" name="_replyto" placeholder="Email" data-validator="email">
+        </label>
 
-          <input type="hidden" name="_next" value="/website-repo/thanks.html">
-          <input type="hidden" name="_subject" value="Contact message from lispless gh-pages site">
-          <input type="text" name="_gotcha" style="display:none">
+        <input type="hidden" name="_next" value="/website-repo/thanks.html">
+        <input type="hidden" name="_subject" value="Contact message from lispless gh-pages site">
+        <input type="text" name="_gotcha" style="display:none">
 
-            <textarea name="message" placeholder="Message"></textarea>
-          <input class="button" type="submit" value="Send">
-        </fieldset>
+        <textarea name="message" placeholder="Message"></textarea>
+        <input class="button" type="submit" value="Send">
       </form>
     </aside>
     <div id="footer"></div>
