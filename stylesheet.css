@@ -12,7 +12,7 @@ GENERAL
 }
 
 a {
-  color: inherit;
+  color: #808080;
   text-decoration: inherit; }
   a:hover {
     text-decoration: underline; }
@@ -66,9 +66,9 @@ HEADER
   background: rgba(255,255,255,0.8);
   position: absolute;
   bottom: 0px;
-  left: -92px;
-  height: 30px;
-  width: 20px;
+  left: -80px;
+  height: 18px;
+  width: 7px;
   -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
   display: block;
