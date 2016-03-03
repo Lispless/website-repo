@@ -44,6 +44,15 @@ LAYOUT
 @media (max-width: 480px) {
   #container {
     max-width: 480px;
+
+    & > .blog-post-right {
+    float: left;
+    text-align: left;
+    }
+
+    & > .blog-blurb {
+      width: 100%;
+    }
   }
 
   aside > #contact-form {
