@@ -271,7 +271,8 @@ PROJECTS
       z-index: 9; }
 
 .tile-expanded {
-  z-index: 10; }
+  z-index: 10;
+  transition: 1000ms; }
 
 /*404*/
 .four-oh-four-message {

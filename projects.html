@@ -51,12 +51,6 @@
   <div>
 <script>
   $(".tile").hover(function(){
-    $(this).find(".thumbnail").filter(':not(:animated)').addClass("tile-expanded").animate({ height: "+=3%", width: "+=3%" }, 700);
-    }, function() {
-      $(this).find(".thumbnail").removeClass("tile-expanded").animate({ height: "-=3%", width: "-=3%" }, 700);
-  });
-
-  $(".tile").hover(function(){
     $(this).find("div span").filter(':not(:animated)').css("opacity", "1.0").animate({letterSpacing: "+=4px"}, 110);
   }, function() {
     $(this).find("div span").css("opacity", "0.0").animate({letterSpacing: "0"}, 110);
