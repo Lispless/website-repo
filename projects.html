@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="chrome-1">
+  <meta charset="utf-8">
+  <meta name="description" content="Explore various projects and exploits I have had the fortune to experience.">
+  <meta name="author" content="Kurt Henry">
+  <title>Henry, Kurt</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+</script>
+</head>
+<body>
+  <div id="container">
+    <div id="header"></div>
+
+    <div id="projects-container">
+      <div class="tile" id="art-tile">
+
+      </div>
+      <div class="tile" id="apps-tile">
+
+      </div>
+      <div class="tile" id="games-tile">
+
+      </div>
+      <div class="tile" id="stories-tile">
+
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  <div>
+<script>
+  $(".menu-text-left").hover(function(){
+    $(this).filter(':not(:animated)').animate({ paddingLeft: "30%" }, 70);
+  }, function() {
+    $(this).animate({ paddingLeft: "35px" }, 70);
+  });
+</script>
+</body>
+</html>

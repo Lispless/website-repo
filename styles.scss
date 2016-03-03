@@ -80,6 +80,13 @@ LAYOUT
       height: 4em
     }
   }
+
+  #projects-container > .tile {
+    width: 90%;
+    padding-bottom: 80%;
+    float: none;
+    margin: auto;
+  }
 }
 
 
@@ -289,6 +296,23 @@ MAIN
 .error > input {
   border: 1px solid red; }
 
+
+  /*===================
+PROJECTS
+===================*/
+
+#projects-container {
+
+}
+
+.tile {
+  width: 50%;
+  padding-bottom: 45%;
+  border: 1px solid #000;
+  overflow: hidden;
+  float: left;
+  background-image: url ("/website-repo/images/pool-november-thumbnail.png")
+}
 
 /*404*/
 .four-oh-four-message {
