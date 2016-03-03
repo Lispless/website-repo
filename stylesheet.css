@@ -67,13 +67,11 @@ LAYOUT
     margin: auto; }
     #projects-container > .tile > div > span {
       opacity: 1.0;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 20px;
-      border: 1px solid #ccc;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
       bottom: 45px;
-      width: 80%;
-      left: 10%;
-      right: 10%;
+      width: 90%;
+      left: 5%;
+      right: 5%;
       font-size: xx-large; } }
 /*===================
 HEADER
@@ -249,7 +247,7 @@ PROJECTS
   padding-bottom: 45%;
   overflow: hidden;
   float: left;
-  overflow: visible; }
+  /*overflow: visible;*/ }
   .tile div {
     position: absolute;
     top: 0px;
@@ -262,6 +260,7 @@ PROJECTS
     .tile div span {
       display: inherit;
       position: absolute;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
       bottom: 1em;
       font-size: 3em;
       color: #808080;

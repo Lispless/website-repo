@@ -89,13 +89,11 @@ LAYOUT
 
     & > div > span {
       opacity: 1.0;
-      background-color: rgba(white, 0.7);
-      border-radius: 20px;
-      border: 1px solid #ccc;
+      background: linear-gradient(to left,rgba(white, 0.0),rgba(white, 1.0),rgba(white, 0.0));
       bottom: 45px;
-      width: 80%;
-      left: 10%;
-      right: 10%;
+      width: 90%;
+      left: 5%;
+      right: 5%;
       font-size: xx-large;
     }
   }
@@ -324,7 +322,7 @@ PROJECTS
   padding-bottom: 45%;
   overflow: hidden;
   float: left;
-  overflow: visible;
+  /*overflow: visible;*/
 
   & div {
     position: absolute;
@@ -341,6 +339,7 @@ PROJECTS
     & span {
       display: inherit;
       position: absolute;
+      background: linear-gradient(to left,rgba(white, 0.0),rgba(white, 1.0),rgba(white, 0.0));
       bottom: 1em;
       font-size: 3em;
       color: #808080;
