@@ -13,14 +13,18 @@ GENERAL
 
 a {
   color: #808080;
-  text-decoration: inherit; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 html {
   padding: 0px;
   color: #ccc;
-  font-family: Copperplate, sans-serif; }
+  font-family: Copperplate, sans-serif;
+}
 
 /*===================
 LAYOUT
@@ -62,12 +66,21 @@ LAYOUT
       border-radius: 10px;
       border: 3px intset #ccc;
       height: 5em;
+
+      &::-webkit-input-placeholder {
+        font-size: small;
+      }
     }
 
     & > fieldset > label > textarea {
       border-radius: 10px;
       border: 3px intset #ccc;
       height: 12em;
+
+      &::-webkit-input-placeholder {
+        padding-top: 55px;
+        font-size: small;
+      }
     }
 
     & > fieldset > input.button {
@@ -77,7 +90,9 @@ LAYOUT
       font-style: italic;
       font-size: 2em;
       color: #ccc;
-      height: 4em
+      width: 40%;
+      margin: auto;
+      display: block;
     }
   }
 
@@ -110,7 +125,8 @@ HEADER
 }
 
 #sigil {
-  margin: 1em 0 0 18px; }
+  margin: 1em 0 0 18px;
+}
 
 #header-name {
   margin-left: 10px;
@@ -141,7 +157,8 @@ MENU
 
 #main-menu {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+}
 
 .main-menu-item {
   width: 90%;
@@ -162,11 +179,6 @@ MENU
   float: left;
   border-radius: 20px 100px 10px 20px;
   background-image: linear-gradient(to right, #fff, #fff);
-  /**
-  background: -webkit-linear-gradient(left, #cff , #fff);
-  background: -o-linear-gradient(right, #cff, #fff);
-  background: -moz-linear-gradient(right, #cff, #fff);
-  background: linear-gradient(to right, #cff , #fff);*/
   position: relative;
   z-index: 100;
   opacity: 1;
@@ -192,11 +204,6 @@ MENU
   float: right;
   border-radius: 100px 20px 20px 10px;
   background-image: linear-gradient(to left, #fff, #fff);
-  /**
-  background: -webkit-linear-gradient(left, #cff , #fff);
-  background: -o-linear-gradient(right, #cff, #fff);
-  background: -moz-linear-gradient(right, #cff, #fff);
-  background: linear-gradient(to right, #cff , #fff);*/
   position: relative;
   z-index: 100;
   opacity: 1;
@@ -221,14 +228,18 @@ MENU
 .menu-text-left {
   margin: 0;
   padding: 1em 1em;
-  text-align: left; }
+  text-align: left;
+}
 
 .menu-text-right {
   margin: 0;
   padding: 1em 1em;
-  text-align: right; }
+  text-align: right;
+}
 
-/*Blog stuffs*/
+/*===================
+BLOG STUFFS
+===================*/
 .blog-blurb {
   width: 60%;
   border-radius: 10px;
@@ -242,25 +253,26 @@ MENU
   }
 }
 
-
-/*===================
-MAIN
-===================*/
-
 .blog-post-left {
-  float: left; }
+  float: left;
+}
 
 .blog-post-right {
   float: right;
-  text-align: right; }
+  text-align: right;
+}
 
 .blog-link {
-  margin-right: 80%; }
+  margin-right: 80%;
+}
 
 
-/*about*/
+/*===================
+ABOUT
+===================*/
 .section-centered {
-  text-align: center; }
+  text-align: center;
+}
 
 #contact-form {
   width: 30%;
@@ -273,8 +285,13 @@ MAIN
       width: 100%;
       margin: 1em 0;
 
+      &:focus {
+        outline: none;
+      }
+
       &::-webkit-input-placeholder {
         font-style: italic;
+        color: #ccc;
       }
     }
 
@@ -283,9 +300,14 @@ MAIN
       height: 6em;
       margin: 1em 0;
 
+      &:focus {
+        outline: none;
+      }
+
       &::-webkit-input-placeholder {
         font-style: italic;
-        top: 50%;
+        color: #ccc;
+        padding-top: 20px;
       }
     }
   }
@@ -300,20 +322,22 @@ MAIN
   font-style: italic;
   font-size: 1em;
   color: #ccc;
-  height: 2em
+  height: 2em;
+  outline: none;
+
+  &:focus {
+    border-style: inset;
+  }
 }
 
 .error > input {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
 
-  /*===================
+/*===================
 PROJECTS
 ===================*/
-
-#projects-container {
-
-}
 
 .tile {
   position: relative;
@@ -357,7 +381,9 @@ PROJECTS
   transition: 1000ms;
 }
 
-/*404*/
+/*===================
+404
+===================*/
 .four-oh-four-message {
   width: 70%;
   margin: auto;
