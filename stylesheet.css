@@ -253,6 +253,8 @@ PROJECTS
   padding-bottom: 45%;
   overflow: hidden;
   float: left;
+  opacity: 0.65;
+  transition: 1500ms;
   /*overflow: visible;*/ }
   .tile div {
     position: absolute;
@@ -277,8 +279,9 @@ PROJECTS
       z-index: 9; }
 
 .tile-expanded {
-  z-index: 10;
-  transition: 1000ms; }
+  /*z-index: 10;
+  transition: 1000ms;*/
+  opacity: 1.0; }
 
 /*===================
 404

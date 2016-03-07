@@ -30,7 +30,7 @@
       <div class="tile">
         <div>
           <img src="images/coffee-filter-thumbnail.png" class="thumbnail">
-          <span>Applications</span>
+          <span>Apps</span>
         </div>
       </div>
       <div class="tile">
@@ -53,7 +53,13 @@
   $(".tile").hover(function(){
     $(this).find("div span").filter(':not(:animated)').css("opacity", "1.0").animate({letterSpacing: "+=4px"}, 110);
   }, function() {
-    $(this).find("div span").css("opacity", "0.0").animate({letterSpacing: "0"}, 110);
+    $(this).find("div span").css("opacity", "0.0").animate({letterSpacing: "0"}, 500);
+  });
+
+  $(".tile").hover(function(){
+    $(this).addClass("tile-expanded");
+  }, function() {
+    $(this).removeClass("tile-expanded");
   });
 </script>
 </body>
