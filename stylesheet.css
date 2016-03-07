@@ -70,7 +70,8 @@ LAYOUT
     width: 90%;
     padding-bottom: 80%;
     float: none;
-    margin: auto; }
+    margin: auto;
+    opacity: 1.0; }
     #projects-container > .tile > div > span {
       opacity: 1.0;
       background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
