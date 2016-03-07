@@ -59,7 +59,7 @@ LAYOUT
     }
   }
 
-  .title-centered {
+  .blog-title {
     text-align: center;
   }
 
@@ -245,6 +245,17 @@ MENU
 /*===================
 BLOG STUFFS
 ===================*/
+
+.blog-title {
+  display: inline-block;
+  transition: 700ms;
+
+  &:hover {
+    color: #fff;
+    transition: 700ms;
+  }
+}
+
 .blog-blurb {
   width: 60%;
   border-radius: 10px;

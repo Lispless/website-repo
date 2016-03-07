@@ -40,7 +40,7 @@ LAYOUT
     #container > .blog-blurb {
       width: 100%; }
 
-  .title-centered {
+  .blog-title {
     text-align: center; }
 
   aside > #contact-form {
@@ -180,6 +180,13 @@ MENU
 /*===================
 BLOG STUFFS
 ===================*/
+.blog-title {
+  display: inline-block;
+  transition: 700ms; }
+  .blog-title:hover {
+    color: #fff;
+    transition: 700ms; }
+
 .blog-blurb {
   width: 60%;
   border-radius: 10px;
