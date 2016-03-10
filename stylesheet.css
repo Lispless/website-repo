@@ -1,6 +1,9 @@
-/*===================
+/*==================
+COLORS
+==================*/
+/*==================
 GENERAL
-===================*/
+==================*/
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -16,9 +19,9 @@ body {
   font-family: Copperplate, sans-serif;
   line-height: 1.5; }
 
-/*===================
+/*==================
 LAYOUT
-===================*/
+==================*/
 #container {
   max-width: 960px;
   margin: auto; }
@@ -81,9 +84,9 @@ LAYOUT
       left: 5%;
       right: 5%;
       font-size: xx-large; } }
-/*===================
+/*==================
 HEADER
-===================*/
+==================*/
 #header-block {
   margin-bottom: 4em;
   position: relative; }
@@ -108,9 +111,9 @@ HEADER
   -moz-transform: skew(-30deg);
   display: inline; }
 
-/*===================
+/*==================
 MENU
-===================*/
+==================*/
 #main-menu {
   width: 100%;
   margin: auto; }
@@ -175,9 +178,9 @@ MENU
   padding: 1em 1em;
   text-align: right; }
 
-/*===================
+/*==================
 BLOG STUFFS
-===================*/
+==================*/
 .blog-title {
   display: inline-block;
   transition: 700ms; }
@@ -205,9 +208,9 @@ BLOG STUFFS
 .blog-link {
   margin-right: 80%; }
 
-/*===================
+/*==================
 PROJECTS
-===================*/
+==================*/
 .tile {
   position: relative;
   display: block;
@@ -245,9 +248,9 @@ PROJECTS
   transition: 1000ms;*/
   opacity: 1.0; }
 
-/*===================
+/*==================
 ABOUT
-===================*/
+==================*/
 .section-centered {
   text-align: center; }
 
@@ -294,9 +297,9 @@ ABOUT
 .error > input {
   border: 1px solid red; }
 
-/*===================
+/*==================
 404
-===================*/
+==================*/
 .four-oh-four-message {
   width: 70%;
   margin: auto;
