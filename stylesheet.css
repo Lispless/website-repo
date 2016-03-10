@@ -17,7 +17,8 @@ body {
   padding: 0px;
   color: #ccc;
   font-family: Copperplate, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 120%; }
 
 /*==================
 LAYOUT
@@ -25,6 +26,11 @@ LAYOUT
 #container {
   max-width: 960px;
   margin: auto; }
+
+.center {
+  margin: auto;
+  text-align: center;
+  width: 100%; }
 
 @media (max-width: 769px) {
   #container {
@@ -55,7 +61,7 @@ LAYOUT
     aside > #contact-form > fieldset > label > textarea {
       border-radius: 10px;
       border: 2px inset #ccc;
-      height: 12em; }
+      height: 12rem; }
       aside > #contact-form > fieldset > label > textarea::-webkit-input-placeholder {
         padding-top: 55px;
         font-size: small; }
@@ -64,7 +70,7 @@ LAYOUT
       background: none;
       border: 6px outset #ccc;
       font-style: italic;
-      font-size: 2em;
+      font-size: 2rem;
       color: #ccc;
       width: 40%;
       margin: auto;
@@ -74,7 +80,7 @@ LAYOUT
     width: 90%;
     padding-bottom: 80%;
     float: none;
-    margin: 1em auto 1em auto;
+    margin: 1rem auto 1rem auto;
     opacity: 1.0; }
     #projects-container > .tile > div > span {
       opacity: 1.0;
@@ -88,11 +94,11 @@ LAYOUT
 HEADER
 ==================*/
 #header-block {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
   position: relative; }
 
 #sigil {
-  margin: 1em 0 0 18px; }
+  margin: 1rem 0 0 18px; }
 
 #header-name {
   margin-left: 10px;
@@ -120,7 +126,7 @@ MENU
 
 .main-menu-item {
   width: 90%;
-  margin: 1em 0em;
+  margin: 1rem 0;
   border: 5px solid #ccc; }
   .main-menu-item > h1 {
     color: #ccc;
@@ -170,12 +176,12 @@ MENU
 
 .menu-text-left {
   margin: 0;
-  padding: 1em 1em;
+  padding: 1rem 1rem;
   text-align: left; }
 
 .menu-text-right {
   margin: 0;
-  padding: 1em 1em;
+  padding: 1rem 1rem;
   text-align: right; }
 
 /*==================
@@ -191,7 +197,7 @@ BLOG STUFFS
 .blog-blurb {
   width: 60%;
   border-radius: 10px;
-  padding: 1em 1em;
+  padding: 1rem 1rem;
   -webkit-transition: 2000ms; }
   .blog-blurb:hover {
     background-color: #b3b3b3;
@@ -234,8 +240,8 @@ PROJECTS
       display: inherit;
       position: absolute;
       background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
-      bottom: 1em;
-      font-size: 3em;
+      bottom: 1rem;
+      font-size: 3rem;
       color: #808080;
       opacity: 0.0;
       width: 100%;
@@ -247,6 +253,22 @@ PROJECTS
   /*z-index: 10;
   transition: 1000ms;*/
   opacity: 1.0; }
+
+/*==================
+REVIEWS
+==================*/
+.review-block {
+  margin: 2rem 0; }
+
+.ad-joke {
+  margin: auto;
+  width: 60%;
+  height: 5rem;
+  border: 1px solid #f00;
+  border-radius: 10px; }
+  .ad-joke > span {
+    display: block;
+    margin-top: 0.5rem; }
 
 /*==================
 ABOUT
@@ -261,7 +283,7 @@ ABOUT
     border: none; }
     #contact-form > fieldset > label > input {
       width: 100%;
-      margin: 1em 0;
+      margin: 1rem 0;
       border: 1px solid #ccc; }
       #contact-form > fieldset > label > input:focus {
         outline: none; }
@@ -270,8 +292,8 @@ ABOUT
         color: #ccc; }
     #contact-form > fieldset > label > textarea {
       width: 100%;
-      height: 6em;
-      margin: 1em 0;
+      height: 6rem;
+      margin: 1rem 0;
       border: 1px solid #ccc; }
       #contact-form > fieldset > label > textarea:focus {
         outline: none; }
@@ -289,7 +311,7 @@ ABOUT
   font-style: italic;
   font-size: 1em;
   color: #ccc;
-  height: 2em;
+  height: 2rem;
   outline: none; }
   .button:focus {
     border-style: inset; }
@@ -303,6 +325,6 @@ ABOUT
 .four-oh-four-message {
   width: 70%;
   margin: auto;
-  padding-top: 4em; }
+  padding-top: 4rem; }
 
 /*# sourceMappingURL=stylesheet.css.map */
