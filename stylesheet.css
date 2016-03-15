@@ -121,6 +121,7 @@ HEADER
 MENU
 ==================*/
 #main-menu {
+  display: inline-block;
   width: 100%;
   margin: auto; }
 
