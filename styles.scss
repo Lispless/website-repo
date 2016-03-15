@@ -123,9 +123,6 @@ LAYOUT
       opacity: 1.0;
       background: linear-gradient(to left,rgba(white, 0.0),rgba(white, 1.0),rgba(white, 0.0));
       bottom: 45px;
-      width: 90%;
-      left: 5%;
-      right: 5%;
       font-size: xx-large;
     }
   }
@@ -166,6 +163,20 @@ HEADER
   display: inline;
 }
 
+
+/*==================
+FOOTER
+==================*/
+
+#footer {
+  position: relative;
+  min-height: 450px;
+}
+
+#footer-block {
+  position: absolute;
+  bottom: 0;
+}
 
 /*==================
 MENU
@@ -331,7 +342,9 @@ PROJECTS
       font-size: 3rem;
       color: #808080;
       opacity: 0.0;
-      width: 100%;
+      width: 90%;
+      left: 5%;
+      right: 5%;
       text-align: center;
       transition: 700ms;
       z-index: 9;
