@@ -117,14 +117,15 @@ HEADER
 /*==================
 FOOTER
 ==================*/
-/*#footer {
+#footer {
   position: relative;
-}
+  display: inline-block;
+  width: 100%; }
 
 #footer-block {
   position: absolute;
-  top: 0;
-}*/
+  top: 0; }
+
 /*==================
 MENU
 ==================*/
