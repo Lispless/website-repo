@@ -118,12 +118,11 @@ HEADER
 FOOTER
 ==================*/
 #footer {
-  position: relative;
-  min-height: 450px; }
+  position: relative; }
 
 #footer-block {
   position: absolute;
-  bottom: 0; }
+  top: 0; }
 
 /*==================
 MENU
