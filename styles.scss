@@ -73,6 +73,7 @@ LAYOUT
 
   .blog-title {
     text-align: center;
+    width: 100%
   }
 
   aside > #contact-form {
@@ -106,7 +107,8 @@ LAYOUT
       font-style: italic;
       font-size: 2rem;
       color: #ccc;
-      width: 40%;
+      width: 50%;
+      height: 50%;
       margin: auto;
       display: block;
     }
@@ -282,7 +284,7 @@ BLOG STUFFS
 }
 
 .blog-blurb {
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
   padding: 1rem 1rem;
   -webkit-transition: 2000ms;
@@ -424,7 +426,8 @@ ABOUT
       &::-webkit-input-placeholder {
         font-style: italic;
         color: #ccc;
-        padding-top: 20px;
+        margin: auto;
+        height: 50%;
       }
     }
   }
