@@ -199,6 +199,28 @@ MENU
 /*==================
 BLOG STUFFS
 ==================*/
+#poe-quote:before {
+  content: open-quote;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem; }
+
+#poe-quote:after {
+  content: close-quote;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1rem; }
+
 .blog-title {
   display: inline-block;
   transition: 700ms; }
