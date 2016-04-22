@@ -273,7 +273,7 @@ MENU
 BLOG STUFFS
 ==================*/
 
-#poe-quote:before {
+.quotes:before {
   content: open-quote;
   height: 1.5rem;
   width: 1.5rem;
@@ -285,7 +285,7 @@ BLOG STUFFS
   margin-right: 1rem;
 }
 
-#poe-quote:after {
+.quotes:after {
   content: close-quote;
   height: 1.5rem;
   width: 1.5rem;
