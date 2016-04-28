@@ -127,9 +127,10 @@ FOOTER
 #footer-block {
   position: absolute;
   top: 0; }
-  #footer-block > #ul {
-    list-style: none;
-    margin: auto; }
+
+#footer-block ul {
+  list-style: none;
+  margin: auto; }
 
 .footer-nav-link:first {
   content: ""; }

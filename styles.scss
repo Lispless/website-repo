@@ -179,11 +179,11 @@ FOOTER
 #footer-block {
   position: absolute;
   top: 0;
+}
 
-  & > #ul {
-    list-style: none;
-    margin: auto;
-  }
+#footer-block ul {
+  list-style: none;
+  margin: auto;
 }
 
 .footer-nav-link {
