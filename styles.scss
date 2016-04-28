@@ -184,9 +184,13 @@ FOOTER
 #footer-block ul {
   list-style: none;
   margin: auto;
+  display: inline-block;
+  padding: 0px;
 }
 
 .footer-nav-link {
+
+  padding: 2rem;
 
   &:first {
     content: "";

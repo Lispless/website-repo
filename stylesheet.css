@@ -130,18 +130,22 @@ FOOTER
 
 #footer-block ul {
   list-style: none;
-  margin: auto; }
+  margin: auto;
+  display: inline-block;
+  padding: 0px; }
 
-.footer-nav-link:first {
-  content: ""; }
-.footer-nav-link:before {
-  content: "";
-  background-color: #ccc;
-  height: 0.5rem;
-  width: 0.5rem;
-  position: absolute;
-  -webkit-transform: skew(-30deg);
-  border-radius: 3px 1px; }
+.footer-nav-link {
+  padding: 2rem; }
+  .footer-nav-link:first {
+    content: ""; }
+  .footer-nav-link:before {
+    content: "";
+    background-color: #ccc;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    -webkit-transform: skew(-30deg);
+    border-radius: 3px 1px; }
 
 /*==================
 MENU
