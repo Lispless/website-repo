@@ -190,7 +190,7 @@ FOOTER
 
 .footer-nav-link {
 
-  padding: 2rem;
+  padding: 0 2rem;
 
   &:first {
     content: "";
@@ -204,6 +204,7 @@ FOOTER
     position: absolute;
     -webkit-transform: skew(-30deg);
     border-radius: 3px 1px;
+    margin: 0.5rem 0 0.5rem -1rem;
   }
 }
 
