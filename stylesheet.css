@@ -128,6 +128,11 @@ FOOTER
   position: absolute;
   top: 0; }
 
+.footer-nav-link:first {
+  content: ""; }
+.footer-nav-link:before {
+  content: ""; }
+
 /*==================
 MENU
 ==================*/

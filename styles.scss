@@ -181,6 +181,17 @@ FOOTER
   top: 0;
 }
 
+.footer-nav-link {
+
+  &:first {
+    content: "";
+  }
+
+  &:before {
+    content: "";
+  }
+}
+
 /*==================
 MENU
 ==================*/
