@@ -127,11 +127,20 @@ FOOTER
 #footer-block {
   position: absolute;
   top: 0; }
+  #footer-block > #ul {
+    list-style: none;
+    margin: auto; }
 
 .footer-nav-link:first {
   content: ""; }
 .footer-nav-link:before {
-  content: ""; }
+  content: "";
+  background-color: #ccc;
+  height: 0.5rem;
+  width: 0.5rem;
+  position: absolute;
+  -webkit-transform: skew(-30deg);
+  border-radius: 3px 1px; }
 
 /*==================
 MENU

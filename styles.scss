@@ -179,6 +179,11 @@ FOOTER
 #footer-block {
   position: absolute;
   top: 0;
+
+  & > #ul {
+    list-style: none;
+    margin: auto;
+  }
 }
 
 .footer-nav-link {
@@ -189,6 +194,12 @@ FOOTER
 
   &:before {
     content: "";
+    background-color: $neutralgrey;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    -webkit-transform: skew(-30deg);
+    border-radius: 3px 1px;
   }
 }
 
