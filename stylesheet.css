@@ -137,7 +137,7 @@ FOOTER
 
 .footer-nav-link {
   padding: 0 2rem;
-  display: 100%; }
+  display: inline; }
   .footer-nav-link:first {
     content: "";
     height: 1rem;
