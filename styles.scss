@@ -192,15 +192,7 @@ FOOTER
 .footer-nav-link {
 
   padding: 0 2rem;
-  display: inline;
-
-  &:first {
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    border-radius: 10px;
-    border: 2px solid $neutralgrey;
-  }
+  display: inline-block;
 
   &:before {
     content: "";

@@ -137,13 +137,7 @@ FOOTER
 
 .footer-nav-link {
   padding: 0 2rem;
-  display: inline; }
-  .footer-nav-link:first {
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    border-radius: 10px;
-    border: 2px solid #ccc; }
+  display: inline-block; }
   .footer-nav-link:before {
     content: "";
     background-color: #ccc;
