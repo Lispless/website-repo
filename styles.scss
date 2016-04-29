@@ -182,6 +182,7 @@ FOOTER
 }
 
 #footer-block ul {
+  width: 100%;
   list-style: none;
   margin: auto;
   display: inline-block;
@@ -191,6 +192,7 @@ FOOTER
 .footer-nav-link {
 
   padding: 0 2rem;
+  display: 100%;
 
   &:first {
     content: "";

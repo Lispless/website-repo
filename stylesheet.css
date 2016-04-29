@@ -129,13 +129,15 @@ FOOTER
   top: 0; }
 
 #footer-block ul {
+  width: 100%;
   list-style: none;
   margin: auto;
   display: inline-block;
   padding: 0px; }
 
 .footer-nav-link {
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  display: 100%; }
   .footer-nav-link:first {
     content: "";
     height: 1rem;
