@@ -162,6 +162,7 @@ HEADER
   width: 20px;
   -webkit-transform: skew(-30deg);
   -moz-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
   display: inline;
 }
 
@@ -179,14 +180,14 @@ FOOTER
 #footer-block {
   position: absolute;
   top: 0;
-}
 
-#footer-block ul {
-  width: 100%;
-  list-style: none;
-  margin: auto;
-  display: inline-block;
-  padding: 0px;
+  & > ul {
+    width: 100%;
+    list-style: none;
+    margin: auto;
+    display: inline-block;
+    padding: 0px;
+  }
 }
 
 .footer-nav-link {
@@ -431,6 +432,7 @@ REVIEWS
     margin-top: 0.5rem;
   }
 }
+
 
 /*==================
 ABOUT
