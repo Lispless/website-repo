@@ -49,18 +49,18 @@
 
     <div id="footer"></div>
   <div>
-<script>
-  $(".tile").hover(function(){
-    $(this).find("div span").filter(':not(:animated)').css("opacity", "1.0").animate({letterSpacing: "+=4px"}, 110);
-  }, function() {
-    $(this).find("div span").css("opacity", "0.0").animate({letterSpacing: "0"}, 500);
-  });
+  <script>
+    $(".tile").hover(function(){
+      $(this).find("div span").filter(':not(:animated)').css("opacity", "1.0").animate({letterSpacing: "+=4px"}, 110);
+    }, function() {
+      $(this).find("div span").css("opacity", "0.0").animate({letterSpacing: "0"}, 500);
+    });
 
-  $(".tile").hover(function(){
-    $(this).addClass("tile-expanded");
-  }, function() {
-    $(this).removeClass("tile-expanded");
-  });
-</script>
+    $(".tile").hover(function(){
+      $(this).addClass("tile-expanded");
+    }, function() {
+      $(this).removeClass("tile-expanded");
+    });
+  </script>
 </body>
 </html>
