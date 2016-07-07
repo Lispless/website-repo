@@ -122,8 +122,9 @@ HEADER
 #milia-headernail {
   float: right;
   border-radius: 8px;
-  max-height: 147px;
-  max-width: 434; }
+  max-height: 147px; }
+  #milia-headernail:img {
+    height: 147px; }
   #milia-headernail:before {
     content: "";
     border: 1px solid black;

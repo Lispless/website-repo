@@ -174,7 +174,10 @@ HEADER
   float: right;
   border-radius: 8px;
   max-height: 147px;
-  max-width: 434;
+
+  &:img {
+    height: 147px;
+  }
 
   &:before {
     content: "";
