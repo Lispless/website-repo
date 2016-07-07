@@ -123,8 +123,11 @@ HEADER
   float: right;
   border-radius: 8px;
   max-height: 147px;
-  max-width: 434;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white), url(/website-repo/images/milia-headernail.png); }
+  max-width: 434; }
+  #milia-headernail:before {
+    content: "";
+    border: 1px solid black;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white), url(/website-repo/images/milia-headernail.png); }
 
 /*==================
 FOOTER
