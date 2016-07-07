@@ -184,6 +184,22 @@ HEADER
   }
 }
 
+@media (max-width: 769px) {
+  #milia-headernail {
+    &:before {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #milia-headernail {
+    &:before {
+      background-image: none;
+    }
+  }
+}
+
 
 /*==================
 FOOTER
