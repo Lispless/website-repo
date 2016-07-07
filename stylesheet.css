@@ -93,7 +93,6 @@ LAYOUT
 HEADER
 ==================*/
 #header-block {
-  margin-bottom: 4rem;
   position: relative;
   display: inline-block; }
 
@@ -118,11 +117,11 @@ HEADER
   -ms-transform: skew(-30deg);
   display: inline; }
 
-.milia-headernail {
+#milia-headernail {
   float: right;
   border-radius: 8px; }
-  .milia-headernail:after {
-    content: none;
+  #milia-headernail:after {
+    content: "";
     border: 1px solid black; }
 
 /*==================

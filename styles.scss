@@ -136,7 +136,6 @@ HEADER
 ==================*/
 
 #header-block {
-  margin-bottom: 4rem;
   position: relative;
   display: inline-block;
 }
@@ -167,12 +166,12 @@ HEADER
   display: inline;
 }
 
-.milia-headernail {
+#milia-headernail {
   float: right;
   border-radius: 8px;
 
   &:after {
-    content: none;
+    content: "";
     border: 1px solid black;
   }
 }
