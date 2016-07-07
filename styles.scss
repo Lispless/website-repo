@@ -138,6 +138,7 @@ HEADER
 #header-block {
   margin-bottom: 4rem;
   position: relative;
+  display: inline-block;
 }
 
 #sigil {
@@ -168,6 +169,10 @@ HEADER
 
 .milia-headernail {
   border: 1px solid black;
+
+  &:after {
+    content: none;
+  }
 }
 
 

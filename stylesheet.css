@@ -94,7 +94,8 @@ HEADER
 ==================*/
 #header-block {
   margin-bottom: 4rem;
-  position: relative; }
+  position: relative;
+  display: inline-block; }
 
 #sigil {
   margin: 1rem 0 0 18px; }
@@ -119,6 +120,8 @@ HEADER
 
 .milia-headernail {
   border: 1px solid black; }
+  .milia-headernail:after {
+    content: none; }
 
 /*==================
 FOOTER
