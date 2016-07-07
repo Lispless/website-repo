@@ -138,6 +138,10 @@ HEADER
 #header-block {
   position: relative;
   display: inline-block;
+
+  & > h4 {
+    margin: 1em auto auto auto;
+  }
 }
 
 #sigil {
@@ -169,6 +173,7 @@ HEADER
 #milia-headernail {
   float: right;
   border-radius: 8px;
+  max-height: 147px;
 
   &:after {
     content: "";

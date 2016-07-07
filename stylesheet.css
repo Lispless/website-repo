@@ -95,6 +95,8 @@ HEADER
 #header-block {
   position: relative;
   display: inline-block; }
+  #header-block > h4 {
+    margin: 1em auto auto auto; }
 
 #sigil {
   margin: 1rem 0 0 18px; }
@@ -119,7 +121,8 @@ HEADER
 
 #milia-headernail {
   float: right;
-  border-radius: 8px; }
+  border-radius: 8px;
+  max-height: 147px; }
   #milia-headernail:after {
     content: "";
     border: 1px solid black; }
