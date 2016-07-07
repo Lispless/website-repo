@@ -119,16 +119,14 @@ HEADER
   -ms-transform: skew(-30deg);
   display: inline; }
 
-#milia-headernail {
-  float: right;
-  border-radius: 8px;
-  max-height: 147px; }
-  #milia-headernail:img {
-    height: 147px; }
-  #milia-headernail:before {
-    content: "";
-    border: 1px solid black;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white), url(/website-repo/images/milia-headernail.png); }
+#milia-headernail:before {
+  content: "";
+  height: 147px;
+  width: 450px;
+  border: 1px solid black;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white), url(/website-repo/images/milia-headernail.png);
+  position: absolute;
+  right: 13em; }
 
 /*==================
 FOOTER
