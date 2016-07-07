@@ -117,6 +117,9 @@ HEADER
   -ms-transform: skew(-30deg);
   display: inline; }
 
+.milia-headernail {
+  border: 1px solid black; }
+
 /*==================
 FOOTER
 ==================*/
