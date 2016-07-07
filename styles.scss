@@ -174,11 +174,8 @@ HEADER
   float: right;
   border-radius: 8px;
   max-height: 147px;
-
-  &:before {
-    content: "";
-    border: 1px solid black;
-  }
+  max-width: 434;
+  background-image: linear-gradient(     to left,     rgba(255,255,255,0),     rgba(255,255,255, 1.5)   ),url(/website-repo/images/milia-headernail.png);
 }
 
 
