@@ -196,9 +196,11 @@ HEADER
   #headernail {
     &:before {
       background-image: url("/website-repo/images/jam-headernail.png");
-      height: 50px;
-      width: 50px;
-      border-radius: 25px;
+      height: 120px;
+      width: 120px;
+      border-radius: 60px;
+      right: 2em;
+      top: 2em;
     }
   }
 }
