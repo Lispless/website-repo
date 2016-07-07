@@ -119,9 +119,11 @@ HEADER
   display: inline; }
 
 .milia-headernail {
-  border: 1px solid black; }
+  float: right;
+  border-radius: 8px; }
   .milia-headernail:after {
-    content: none; }
+    content: none;
+    border: 1px solid black; }
 
 /*==================
 FOOTER

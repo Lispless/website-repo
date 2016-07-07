@@ -168,10 +168,12 @@ HEADER
 }
 
 .milia-headernail {
-  border: 1px solid black;
+  float: right;
+  border-radius: 8px;
 
   &:after {
     content: none;
+    border: 1px solid black;
   }
 }
 
