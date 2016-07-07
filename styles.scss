@@ -171,14 +171,10 @@ HEADER
 }
 
 #milia-headernail {
+  background-image: url("/website-repo/images/milia-headernail.png");
   float: right;
   border-radius: 8px;
   max-height: 147px;
-
-  &:after {
-    content: "";
-    border: 1px solid black;
-  }
 }
 
 
