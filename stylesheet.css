@@ -119,7 +119,7 @@ HEADER
   -ms-transform: skew(-30deg);
   display: inline; }
 
-#milia-headernail:before {
+#headernail:before {
   content: "";
   height: 147px;
   width: 430px;
@@ -130,10 +130,10 @@ HEADER
   right: 13em; }
 
 @media (max-width: 769px) {
-  #milia-headernail:before {
+  #headernail:before {
     right: 0; } }
 @media (max-width: 480px) {
-  #milia-headernail:before {
+  #headernail:before {
     background-image: url("/website-repo/images/jam-headernail.png");
     height: 50px;
     width: 50px;
