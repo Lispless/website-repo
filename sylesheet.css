@@ -1,0 +1,411 @@
+/*==================
+COLORS
+==================*/
+/*==================
+GENERAL
+==================*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a {
+  color: #808080;
+  text-decoration: inherit; }
+  a:hover {
+    text-decoration: underline; }
+
+body {
+  padding: 0px;
+  color: #ccc;
+  font-family: Copperplate, sans-serif;
+  line-height: 1.5;
+  font-size: 120%; }
+
+/*==================
+LAYOUT
+==================*/
+#container {
+  max-width: 960px;
+  margin: auto; }
+
+.center {
+  margin: auto;
+  text-align: center;
+  width: 100%; }
+
+@media (max-width: 769px) {
+  #container {
+    max-width: 768px; }
+
+  aside > #contact-form {
+    width: 60%; } }
+@media (max-width: 480px) {
+  #container {
+    max-width: 480px; }
+    #container > .blog-post-right {
+      float: left;
+      text-align: left; }
+    #container > .blog-blurb {
+      width: 100%; }
+
+  .blog-title {
+    text-align: center;
+    width: 100%; }
+
+  aside > #contact-form {
+    width: 80%; }
+    aside > #contact-form > fieldset > label > input {
+      border-radius: 10px;
+      border: 2px inset #ccc;
+      height: 5em; }
+      aside > #contact-form > fieldset > label > input::-webkit-input-placeholder {
+        font-size: small; }
+    aside > #contact-form > fieldset > label > textarea {
+      border-radius: 10px;
+      border: 2px inset #ccc;
+      height: 12rem; }
+      aside > #contact-form > fieldset > label > textarea::-webkit-input-placeholder {
+        padding-top: 55px;
+        font-size: small; }
+    aside > #contact-form > fieldset > input.button {
+      border-radius: 10px;
+      background: none;
+      border: 6px outset #ccc;
+      font-style: italic;
+      font-size: 2rem;
+      color: #ccc;
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      display: block; }
+
+  #projects-container > .tile {
+    width: 90%;
+    padding-bottom: 80%;
+    float: none;
+    margin: 1rem auto 1rem auto;
+    opacity: 1.0; }
+    #projects-container > .tile > div > span {
+      opacity: 1.0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+      bottom: 45px;
+      font-size: xx-large; } }
+/*==================
+HEADER
+==================*/
+#header-block {
+  position: relative;
+  display: inline-block; }
+  #header-block > h4 {
+    margin: 1em auto auto auto; }
+
+#sigil {
+  margin: 1rem 0 0 18px; }
+
+#header-name {
+  margin-left: 10px;
+  display: inline; }
+  #header-name:hover {
+    text-decoration: underline; }
+
+#name-shine {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0px;
+  left: -10px;
+  height: 30px;
+  width: 20px;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -ms-transform: skew(-30deg);
+  display: inline; }
+
+#headernail:before {
+  content: "";
+  height: 147px;
+  width: 430px;
+  border-radius: 8px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white), url(/website-repo/images/milia-headernail.png);
+  background-position: 0;
+  position: absolute;
+  right: 13em; }
+
+@media (max-width: 769px) {
+  #headernail:before {
+    right: 0; } }
+@media (max-width: 480px) {
+  #headernail:before {
+    background-image: url("/website-repo/images/jam-headernail.png");
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    right: 2em;
+    top: 2em;
+    background-position: 57%, 5%; } }
+/*==================
+FOOTER
+==================*/
+#footer {
+  position: relative;
+  display: inline-block;
+  width: 100%; }
+
+#footer-block {
+  position: absolute;
+  top: 0; }
+  #footer-block > ul {
+    width: 100%;
+    list-style: none;
+    margin: auto;
+    display: inline-block;
+    padding: 0px; }
+
+.footer-nav-link {
+  padding: 0 2rem;
+  display: inline-block; }
+  .footer-nav-link:before {
+    content: "";
+    background-color: #ccc;
+    height: 0.5rem;
+    width: 0.5rem;
+    position: absolute;
+    -webkit-transform: skew(-30deg);
+    border-radius: 3px 1px;
+    margin: 0.5rem 0 0.5rem -2rem; }
+
+/*==================
+MENU
+==================*/
+#main-menu {
+  display: inline-block;
+  width: 100%;
+  margin: auto; }
+
+.main-menu-item {
+  width: 90%;
+  margin: 1rem 0;
+  border: 5px solid #ccc; }
+  .main-menu-item > h1 {
+    color: #ccc;
+    -webkit-transition: 1300ms; }
+  .main-menu-item:hover > h1 {
+    color: #808080; }
+
+.menu-left {
+  float: left;
+  border-radius: 20px 100px 10px 20px;
+  background-image: linear-gradient(to right, #fff, #fff);
+  position: relative;
+  z-index: 100;
+  opacity: 1; }
+  .menu-left:before {
+    background-image: linear-gradient(to top right, #cff, #fff);
+    border-radius: inherit;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: -100;
+    transition: opacity 1500ms; }
+  .menu-left:hover:before {
+    opacity: 1; }
+
+.menu-right {
+  float: right;
+  border-radius: 100px 20px 20px 10px;
+  background-image: linear-gradient(to left, #fff, #fff);
+  position: relative;
+  z-index: 100;
+  opacity: 1; }
+  .menu-right:before {
+    background-image: linear-gradient(to top left, #cff, #fff);
+    border-radius: inherit;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    z-index: -100;
+    transition: opacity 1500ms; }
+  .menu-right:hover:before {
+    opacity: 1; }
+
+.menu-text-left {
+  margin: 0;
+  padding: 1rem 1rem;
+  text-align: left; }
+
+.menu-text-right {
+  margin: 0;
+  padding: 1rem 1rem;
+  text-align: right; }
+
+/*==================
+BLOG STUFFS
+==================*/
+.quotes:before {
+  content: open-quote;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem; }
+
+.quotes:after {
+  content: close-quote;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 1rem; }
+
+.blog-title {
+  display: inline-block;
+  transition: 700ms; }
+  .blog-title:hover {
+    color: #fff;
+    transition: 700ms; }
+
+.blog-blurb {
+  width: 80%;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  -webkit-transition: 2000ms; }
+  .blog-blurb:hover {
+    background-color: #b3b3b3;
+    color: #fff;
+    -webkit-transition: 1000ms; }
+
+.blog-post-left {
+  float: left; }
+
+.blog-post-right {
+  float: right;
+  text-align: right; }
+
+.blog-link {
+  margin-right: 80%; }
+
+/*==================
+PROJECTS
+==================*/
+.tile {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding-bottom: 45%;
+  overflow: hidden;
+  float: left;
+  opacity: 0.65;
+  transition: 1500ms;
+  /*overflow: visible;*/ }
+  .tile div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .tile div img {
+      width: 100%;
+      height: 100%; }
+    .tile div span {
+      display: inherit;
+      position: absolute;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
+      bottom: 1rem;
+      font-size: 3rem;
+      color: #808080;
+      opacity: 0.0;
+      width: 90%;
+      left: 5%;
+      right: 5%;
+      text-align: center;
+      transition: 700ms;
+      z-index: 9; }
+
+.tile-expanded {
+  /*z-index: 10;
+  transition: 1000ms;*/
+  opacity: 1.0; }
+
+/*==================
+REVIEWS
+==================*/
+.review-block {
+  margin: 4rem 0; }
+
+.ad-joke {
+  margin: auto;
+  width: 60%;
+  height: 5rem;
+  border: 1px solid #f00;
+  border-radius: 10px; }
+  .ad-joke > span {
+    display: block;
+    margin-top: 0.5rem; }
+
+/*==================
+ABOUT
+==================*/
+.section-centered {
+  text-align: center; }
+
+#contact-form {
+  width: 30%;
+  margin: auto; }
+  #contact-form > fieldset {
+    border: none; }
+    #contact-form > fieldset > label > input {
+      width: 100%;
+      margin: 1rem 0;
+      border: 1px solid #ccc; }
+      #contact-form > fieldset > label > input:focus {
+        outline: none; }
+      #contact-form > fieldset > label > input::-webkit-input-placeholder {
+        font-style: italic;
+        color: #ccc; }
+    #contact-form > fieldset > label > textarea {
+      width: 100%;
+      height: 6rem;
+      margin: 1rem 0;
+      border: 1px solid #ccc; }
+      #contact-form > fieldset > label > textarea:focus {
+        outline: none; }
+      #contact-form > fieldset > label > textarea::-webkit-input-placeholder {
+        font-style: italic;
+        color: #ccc;
+        margin: auto;
+        height: 50%; }
+
+.button {
+  width: 100%;
+  font-style: italic;
+  border-radius: 6px;
+  background: none;
+  border: 2px outset #ccc;
+  font-style: italic;
+  font-size: 1em;
+  color: #ccc;
+  height: 2rem;
+  outline: none; }
+  .button:focus {
+    border-style: inset; }
+
+.error > input {
+  border: 1px solid red; }
+
+/*==================
+404
+==================*/
+.four-oh-four-message {
+  width: 70%;
+  margin: auto;
+  padding-top: 4rem; }
+
+/*# sourceMappingURL=sylesheet.css.map */
