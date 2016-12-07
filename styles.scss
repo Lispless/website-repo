@@ -461,6 +461,7 @@ GALLERY
   overflow: hidden;
   float: left;
   margin: 1rem;
+  transition: 1500ms;
 }
 
 .gallery-item > img {
@@ -485,6 +486,7 @@ GALLERY
     height: 100%;
     width: 100%;
     opacity: 1.0;
+    margin: auto;
   }
 }
 

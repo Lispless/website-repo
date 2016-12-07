@@ -342,7 +342,8 @@ GALLERY
   width: 13rem;
   overflow: hidden;
   float: left;
-  margin: 1rem; }
+  margin: 1rem;
+  transition: 1500ms; }
 
 .gallery-item > img {
   height: 400%;
@@ -361,7 +362,8 @@ GALLERY
   .expand > img {
     height: 100%;
     width: 100%;
-    opacity: 1.0; }
+    opacity: 1.0;
+    margin: auto; }
 
 /*==================
 REVIEWS
