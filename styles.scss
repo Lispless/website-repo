@@ -476,10 +476,16 @@ GALLERY
   }
 }
 
-.expand > img {
+.expand {
   height: 100%;
   width: 100%;
   transition: 1500ms;
+  opacity: 1.0;
+
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 

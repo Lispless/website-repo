@@ -354,10 +354,14 @@ GALLERY
   .gallery-item > img:hover {
     opacity: 1.0; }
 
-.expand > img {
+.expand {
   height: 100%;
   width: 100%;
-  transition: 1500ms; }
+  transition: 1500ms;
+  opacity: 1.0; }
+  .expand > img {
+    height: 100%;
+    width: 100%; }
 
 /*==================
 REVIEWS
