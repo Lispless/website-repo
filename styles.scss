@@ -466,10 +466,10 @@ GALLERY
 .gallery-item > img {
   height: 400%;
   width:  350%;
-  transform: rotate(90deg);
   opacity: 0.65;
   transition: 1500ms;
-  margin: -240px 0px 0px -120px;
+  margin: -140px 0px 0px -320px;
+  image-orientation: from-image;
 
   &:hover {
     opacity: 1.0;
