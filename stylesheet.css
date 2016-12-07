@@ -338,18 +338,19 @@ PROJECTS
 GALLERY
 ==================*/
 .gallery-item {
-  height: 10rem;
-  width: 10rem;
-  overflow: hidden; }
+  height: 13rem;
+  width: 13rem;
+  overflow: hidden;
+  float: left;
+  margin: 1rem; }
 
 .gallery-item > img {
-  height: 100%;
-  width: 100%;
+  height: 400%;
+  width: 350%;
   transform: rotate(90deg);
-  margin: 1rem;
   opacity: 0.65;
-  float: left;
-  transition: 1500ms; }
+  transition: 1500ms;
+  margin: -240px 0px 0px -120px; }
   .gallery-item > img:hover {
     opacity: 1.0; }
 
