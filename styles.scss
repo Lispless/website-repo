@@ -281,7 +281,7 @@ MENU
   opacity: 1;
 
   &:before {
-    background-image: linear-gradient(to top right, #cff, #fff);
+    background-image: linear-gradient(to top right, #cff, #fff 70%, #fff);
     border-radius: inherit;
     opacity: 0;
     position: absolute;
@@ -306,7 +306,7 @@ MENU
   opacity: 1;
 
   &:before {
-    background-image: linear-gradient(to top left, #cff, #fff);
+    background-image: linear-gradient(to top right, #cff 85%, #fff);
     border-radius: inherit;
     opacity: 0;
     position: absolute;
@@ -449,6 +449,15 @@ PROJECTS
   /*z-index: 10;
   transition: 1000ms;*/
   opacity: 1.0;
+}
+
+
+/*==================
+GALLERY
+==================*/
+.gallery-item {
+  height: 4em;
+  width:  4em;
 }
 
 
