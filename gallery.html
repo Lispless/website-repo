@@ -60,12 +60,13 @@
 
     <script>
       $(".gallery-item").click(function() {
-        if (this.className == " expand") {
-          this.className - " expand";
+        if (this.className.match (/(?:^|\s)expand(?!\S)/)) {
+          this.className = " gallery-item";
         } else {
         this.className += " expand";
       };
     });
+    //http://stackoverflow.com/questions/195951/change-an-elements-class-with-javascript
     </script>
 
     <div id="footer"></div>

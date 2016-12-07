@@ -357,11 +357,11 @@ GALLERY
 .expand {
   height: 100%;
   width: 100%;
-  transition: 1500ms;
-  opacity: 1.0; }
+  transition: 1500ms; }
   .expand > img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    opacity: 1.0; }
 
 /*==================
 REVIEWS
