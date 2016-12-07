@@ -458,6 +458,13 @@ GALLERY
 .gallery-item > img {
   height: 4em;
   width:  4em;
+  transform: rotate(90deg);
+  margin: 1em;
+  opacity: 0.65;
+
+  &:hover {
+    opacity: 0.0;
+  }
 }
 
 

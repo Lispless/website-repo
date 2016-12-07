@@ -339,7 +339,12 @@ GALLERY
 ==================*/
 .gallery-item > img {
   height: 4em;
-  width: 4em; }
+  width: 4em;
+  transform: rotate(90deg);
+  margin: 1em;
+  opacity: 0.65; }
+  .gallery-item > img:hover {
+    opacity: 0.0; }
 
 /*==================
 REVIEWS
